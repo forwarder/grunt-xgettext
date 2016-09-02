@@ -41,7 +41,7 @@
   ],
   "dependencies": {
     "chalk": "^0.5.1",
-    "esprima-fs": "^15001.1001.0-dev-harmony-fb",
+    "esprima-fb": "^15001.1001.0-dev-harmony-fb",
     "lodash": "^2.4.1",
     "temp-write": "^1.1.0",
     "babel": "4.3.0"
