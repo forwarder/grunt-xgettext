@@ -217,7 +217,7 @@ module.exports = function(file, options) {
 
     var contents = grunt.file.read(file);
     var lines = _.map(contents.split("\n"), function(line) { return line.trim(); });
-    scan(esprima.parse(contents, { loc: true }));
+    scan(esprima.parse(contents, { loc: true, sourceType: 'module' }));
 
     return collector.messages;
 };
