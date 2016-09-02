@@ -8,7 +8,7 @@
 
 "use strict";
 
-var esprima = require("esprima");
+var esprima = require("esprima-fb");
 var grunt = require("grunt");
 var _ = require("lodash");
 
