@@ -20,6 +20,7 @@ var grunt = require("grunt"),
  * See options: https://babeljs.io/docs/usage/options/
  */
 module.exports = function(file, options) {
+    grunt.log.debug("Read es6 file: " + file);
     var content = babel.transformFileSync(file, options.es6);
     var code = content.code;
 
