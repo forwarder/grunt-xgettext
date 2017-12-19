@@ -40,10 +40,12 @@
     "gruntplugin"
   ],
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
     "chalk": "^0.5.1",
-    "esprima-fb": "^15001.1001.0-dev-harmony-fb",
+    "esprima": "^4.0.0",
     "lodash": "^2.4.1",
-    "temp-write": "^1.1.0",
-    "babel": "4.3.0"
+    "temp-write": "^1.1.0"
   }
 }

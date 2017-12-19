@@ -8,7 +8,7 @@
 
 "use strict";
 
-var esprima = require("esprima-fb");
+var esprima = require("esprima");
 var grunt = require("grunt");
 var _ = require("lodash");
 
@@ -197,6 +197,17 @@ module.exports = function(file, options) {
         case "VariableDeclarator":
             if (syntax.init) {
                 scan(syntax.init);
+            }
+            break;
+        case "ExportNamedDeclaration":
+        case "ExportDefaultDeclaration":
+            if (syntax.declaration) {
+                scan(syntax.declaration);
+            }
+            break;
+        case "MethodDefinition":
+            if (syntax.value) {
+                scan(syntax.value)
             }
             break;
         default:

@@ -2,7 +2,7 @@ import Model from 'model';
 import tr from 'gettext';
 import Framework from 'framework';
 
-class TestCase {
+export class TestCase {
     constructor() {
 
     }
@@ -13,9 +13,11 @@ class TestCase {
             this.send("success", tr("Hallo from es6!"))
         });
     }
-}
 
-export default TestCase;
+    static message = "Static var"
+
+    callback = () => { }
+}
 
 export default Framework.Controller.extend({
     init: function() {

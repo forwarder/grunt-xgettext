@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                     functionName: ["tr", "i18n.tr", "i18n"],
                     potFile: "messages.pot",
                     es6: {
-                        experimental: true
+                        presets: ['react', 'stage-1']
                     }
                 },
 
