@@ -10,7 +10,7 @@
 "use strict";
 
 var grunt = require("grunt"),
-    babel = require("babel-core"),
+    babel = require("@babel/core"),
     fs   = require('fs'),
     tempWrite = require('temp-write'),
     javascriptExtractor = require("./javascript");
