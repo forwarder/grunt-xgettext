@@ -41,8 +41,8 @@
   ],
   "dependencies": {
     "@babel/core": "^7.0.0-beta.44",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1",
+    "@babel/preset-react": "^7.0.0-beta.44",
+    "@babel/preset-stage-1": "^7.0.0-beta.44",
     "chalk": "^0.5.1",
     "esprima": "^4.0.0",
     "lodash": "^2.4.1",
