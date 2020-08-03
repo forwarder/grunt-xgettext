@@ -27,7 +27,7 @@ module.exports = function(file, options) {
     var filePath = tempWrite.sync(code);
 
     var result = javascriptExtractor(filePath, options);
-    fs.unlink(filePath);
+    fs.unlink(filePath, function() {});
 
     return result;
 };
